@@ -52,10 +52,20 @@
         .divider { color: var(--orange); margin: 0 5px; }
         .header-menu { display: flex; gap: 30px; }
         .menu-item { text-decoration: none; color: var(--gray); font-size: 0.9rem; font-weight: 600; }
+        .header-center { display: flex; justify-content: center; flex: 1; }
+        .header-actions { display: flex; justify-content: flex-end; gap: 16px; align-items: center; }
         .btn-orange-header {
             background-color: var(--orange); color: var(--white); border: none;
-            padding: 10px 20px; border-radius: 8px; font-weight: 700; font-size: 0.85rem;
+            width: 150px;
+            height: 44px;
+            border-radius: 8px; font-weight: 700; font-size: 0.85rem;
             cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            appearance: none;
         }
 
         /* --- HERO --- */
@@ -155,8 +165,8 @@
             <div class="header-logo-text">
                 <a href="https://abit.itmo.ru/program/master/ai" target="_blank" style="text-decoration: none; color: inherit;"><span class="itmo-text">ИТМО</span></a><span class="divider">|</span><a href="https://ai.itmo.ru" target="_blank" style="text-decoration: none; color: inherit;"><span class="ath-text">AI Talent Hub</span></a>
             </div>
-            <nav class="header-menu"></nav>
-            <div class="header-action"></div>
+            <div class="header-actions">
+                <a href="example.html" class="btn-orange-header" target="_blank" rel="noopener">Пример</a>
                 <button class="btn-orange-header">Внедрить AI</button>
             </div>
         </div>
@@ -234,7 +244,8 @@
             <div class="roadmap-tag">[экономические эффекты от внедрения AI-решения]</div>
             <div class="row-container">
                 <div class="sub-card">
-                    <h3>Влияние на EBIT — <span class="orange-text">Revenue Upfit</span></h3>
+                    <h3>Влияние на EBIT — <span class="orange-text">Revenue Uplift
+                    </span></h3>
                     <p style="color:var(--gray); font-size:0.9rem; margin-bottom:20px; font-weight: 500;">покажем, где AI увеличивает вашу выручку</p>
                     <ul>
                         <li>Эффект от увеличения конверсии</li>

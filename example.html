@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiveTrace</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #111111;
+            --orange: #FF5C00;
+            --gray: #5F6368;
+            --light-border: #E0E0E0;
+            --light-bg: #F7F8FB;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: var(--light-bg);
+            color: var(--black);
+            min-height: 100vh;
+        }
+
+        .page {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 18px;
+            margin-bottom: 30px;
+            background: var(--orange);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: background 0.25s ease;
+        }
+
+        .back-link:hover {
+            background: #e05100;
+        }
+
+        .block-card {
+            background: #fff;
+            border: 1px solid var(--light-border);
+            border-radius: 24px;
+            padding: 30px;
+            margin-bottom: 22px;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+        }
+
+        .block-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--orange);
+            box-shadow: 0 22px 45px rgba(0, 0, 0, 0.12);
+        }
+
+        .block-title {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: var(--orange);
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .orange-text {
+            color: var(--orange);
+            font-weight: 700;
+        }
+
+        .blue-text {
+            color: #002CFB;
+            font-weight: 700;
+        }
+
+        h1,
+        h2 {
+            margin: 0 0 18px;
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 2.4vw, 2.6rem);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: #111;
+        }
+
+        .text {
+            margin: 0 0 18px;
+            color: var(--gray);
+            line-height: 1.75;
+            font-size: 1rem;
+        }
+
+        .code {
+            display: block;
+            width: 100%;
+            background: #F3F5F7;
+            border: 1px solid #E8EAED;
+            border-radius: 18px;
+            padding: 18px 20px;
+            color: #111;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            white-space: pre-wrap;
+            word-break: break-word;
+            margin: 0 0 20px;
+        }
+
+        .block-group {
+            display: grid;
+            gap: 20px;
+        }
+
+        .compact-block .text {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="index.html" class="back-link">вернуться назад</a>
+
+        <div class="block-card">
+            <span class="block-title">HiveTrace</span>
+            <h1><a href="https://ai.itmo.ru/tpost/afppegfoc1-hivetrace" target="_blank" rel="noopener" class="blue-text">HiveTrace</a> - система, которая защищает компании от атак на нейросети</h1>
+        </div>
+
+        <div class="block-card block-group">
+            <h2><span class="orange-text">Влияние на EBIT - Revenue Uplift</span></h2>
+            <p class="text orange-text">Эффект от удержания клиентов</p>
+            <p class="text">HiveTrace обеспечиваает удержание клиентов, гарантируя доступную и безопасную AI-модель.</p>
+            <div class="code">RU = Q * (Retention Rate 2 - Retention Rate 1) * LTV * AM
+
+Q - количество клиентов = 10 000
+Retention rate 1 - коэффициент удержания клиентов под воздействием атак = 90%
+Retention rate 2 - коэффициент удержания клиентов под защитой HiveTrace = 93%
+LTV - полный доход с клиента за жизнь = 600 руб.
+AM - средняя маржа = 70%
+
+RU =  10 000 клиентов * (93%-90%) * 600 * 0,7 = 126 000 руб.</div>
+        </div>
+
+        <div class="block-card block-group">
+            <h2><span class="orange-text">Влияние на EBIT - Cost Reduction</span></h2>
+            <p class="text orange-text">Эффект от более точных управленческих решений</p>
+            <p class="text">Снижение вероятности наступления рисковых событий, связанных с возможными судебными исками и штрафами при утечке данных или некорректных ответах.</p>
+            <div class="code">CR = (P2 - P1)  * Cost of Risk
+
+P2 - вероятность возникновения убытков в результате атаки
+P1 - вероятность возникновения атаки под защитой
+Cost of Risk - стоимость убытков
+
+CR = (0,4 - 0,2)  * 8 000 000 = 1 600 000 руб.</div>
+            <p class="text orange-text">Эффект от увеличения производительности команды</p>
+            <p class="text">Увеличение производительности команды за счет экономии времени сотрудников, которые занимались защитой AI-модели.</p>
+            <div class="code">CR  = (Time 2  - Time 1) * Tasks * Cost per task
+
+Time 2  - время, потраченное на обнаружении аномалий ручным трудом = 4 часа
+Time 1  - время, потраченное HiveTrace на обнаружение аномалии = 30 мин
+Tasks  - количество инцидентов, требующих вмешательства = 100
+Cost per task - стоимость устранения инцидента = 2000
+
+CR = (4 - 0,5) * 100 * 2000  = 700 000 руб.</div>
+            <p class="text orange-text">Эффект от оптимизации бизнес-процессов</p>
+            <p class="text">Повышение эффективности использования дорогостоящего «железа» за счет устранения нецелевых и вредоносных нагрузок на инфраструктуру.</p>
+            <div class="code">CR = (Overload before - Overload after) * Cost per hour 
+
+Overload 2 - доля обычного вредоносного трафика = 10%
+Overload 1 - доля вредоносного трафика при HiveTrace = 0,5%
+Cost per delay - стоимость простоя (упущенная выгода) = 10 000 руб.
+
+CR = (10 - 0,5) * 10 000 = 95 000 руб.
+</div>
+        </div>
+
+        <div class="block-card block-group">
+            <p class="text blue-text"><strong>Total = 126 000 + 1 600 000 + 700 000 + 95 000 = 2 395 126 руб.</strong></p>
+        </div>
+
+        <div class="block-card block-group compact-block">
+            <h2><span class="orange-text">Ожидаемые OPEX - Variable Costs</span></h2>
+            <p class="text orange-text">Облачная инфраструктура и вычисления = 100 000 руб.</p>
+            <p class="text">Потребление ресурсов для анализа входящего трафика.</p>
+            <p class="text orange-text">Обучение и адаптация команды = 50 000 руб.</p>
+            <p class="text">Внутренние тренинги для специалистов по кибербезопасности (SOC) и ML-инженеров.</p>
+        </div>
+
+        <div class="block-card block-group compact-block">
+            <p class="text"><strong class="orange-text">Финансовая модель</strong><br>Ставка дисконтирования - 30%<br>Срок - 1 год<br>Период расчета - 3 месяца<br>Ставка налога на прибыль - 22%</p>
+            <p class="text"><strong class="orange-text">Показатели эффективности</strong><br>NPV - 588 349 руб.<br>ROI - 2,37<br>DPP - 7,5 месяцев</p>
+            <p class="text"><strong class="orange-text">Карта рисков</strong><br>Максимальная сумма ущерба - 570 000 руб.<br>Сумма возможного ущерба 24% от ожидаемого экономического эффекта.</p>
+            <p class="text blue-text"><a href="https://docs.google.com/spreadsheets/d/1IGrGr-xEAG6QEBg4K4834nIj_UCzp0E6s2TK2G9cHPE/edit?usp=sharing" target="_blank" rel="noopener">Полный расчет представлен здесь</a></p>
+        </div>
+    </div>
+</body>
+</html>
